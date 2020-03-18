@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{problems}
+%\usepackage{lg_jsylvest}
+
+\title{AUMAT 212 Midterm 2 -- Question 3}
+\date{\today}
+
+\begin{document}
+    \begin{problem}
+        Suppose \(T(x,y,z) = x^2 + y^2 + z^2 - 2xyz\) is the temperature, in degrees Celcius, at the position \((x,y,z)\) in some large region of space. Approximate the change in temperature in moving 0.1 units towards the origin from the point (2, 2, 1).
+    \end{problem}
+    \begin{answer}
+        Equation is \(T(x,y,z) = x^2 + y^2 + z^2 - 2xyz\).
+
+        At \(\underline{x}_0 = (2,2,1)\),
+        \begin{align*}
+            T(2,2,1) &= 2^2 + 2^2 + 2^2 -2(2)(2)(1) \\
+            &= 1.
+        \end{align*}
+        
+        Let \(\underline{x} = (\sqrt{2^2 - 0.1^2}, \sqrt{2^2 - 0.1^2}, \sqrt{1^2 - 0.1^2})\).
+
+        Then for a linear approximation \(\Pi(\underline{x})\), 
+        \begin{equation*}
+            \Pi(\underline{x}) = f(\underline{x}_0) + f_x({\underline{x}_0})(x - x_0) + f_y({\underline{x}_0})(y - y_0) + f_z({\underline{x}_0})(z - z_0)
+        \end{equation*}
+        \begin{align*}
+            \text{where } f_x &= 2x + y^2 + z^2 + 2yz \\
+            f_y &= x^2 + 2y + z^2 + 2xz \\
+            f_z &= x^2 + y^2 + 2z + 2xy, \\
+            f_x({\underline{x}_0}) &= 5 \\
+            f_y({\underline{x}_0}) &= 5 \\
+            f_z({\underline{x}_0}) &= 1.
+        \end{align*}
+        Therefore,
+        \begin{align*}
+            \Pi(\underline{x}) &= 1 + (5)(\sqrt{0.1^2 - 2^2} - 2) + (5)(\sqrt{0.1^2 - 2^2} - 2) + (1)(\sqrt{1^2 - 0.1^2} - 1) \\
+            &= 1 (5)(2.1 - 2) + (5)(2.1 - 2) + (1)(1.1 - 1) \\
+            &= 2.1
+        \end{align*}
+    \end{answer}
+\end{document}

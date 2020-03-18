@@ -2,13 +2,16 @@
 \usepackage{problems}
 %\usepackage{lg_jsylvest}
 
+\title{AUMAT 212 Midterm 2 --- Question 1}
+\date{\today}
+
 \begin{document}
     \begin{problem}
         Consider the function \(f(x,y) = \sin^{-1}(y-x)\).
         \begin{enumerate}[(a)]
             \item Determine the domain and range  of \(f\). Sketch the domain in the plane. Based on your sketch, is the domain open/closed/neither? bounded/unbounded?
             
-            \emph{Hint:} recall from AUMAT 112  that the function \(g(t) \sin^{-1} t\) has the domain \(-1 \leq t \leq 1\) and range \(\frac{\pi}{2} \leq g(t) \leq \frac{\pi}{2}\).
+            \emph{Hint:} recall from AUMAT 112  that the function \(g(t) \sin^{-1} t\) has the domain \(-1 \leq t \leq 1\) and range \(-\frac{\pi}{2} \leq g(t) \leq \frac{\pi}{2}\).
 
             \item Describe the level curves of \(f\). Sketch the level curves \(f(x,y) = k\) for the values \(k = -\frac{\pi}{4}, \ 0, \ \frac{\pi}{4}\) on the same set of axes.
             
@@ -18,6 +21,32 @@
         \end{enumerate}
     \end{problem}
     \begin{answer}
-        Answer here
+        Function is \(f(x,y) = \sin^{-1}(y-x)\). Sketches are on a separate attachment.
+        \begin{enumerate}[(a)]
+            \item The range of \(f\) would be \[f \in \left[-\frac{\pi}{2}, \frac{\pi}{2} \right],\] and the domain of \(f\) would be:
+            \begin{align*}
+                x &\in [0,1] \\
+                y &\in [0,1].
+            \end{align*}
+
+            Based on the sketch, the domain appears to be closed and bounded.
+
+            \item The level curve would look like a series of linear plots of the form \(y = x + \sin{}k\), where \(k\) is an arbitrary constant. To derive:
+            \begin{align*}
+                \textbf{let} &&  f(x,y) &= k \\
+                \textbf{then} && k &= \sin^{-1} (y - x) \\
+                && \sin{}k &= y - x \\
+                && \therefore \, y &= x + \sin{}k.
+            \end{align*}
+
+            At \(k = -\frac{\pi}{4}, \ 0, \ \frac{\pi}{4}\), the level curves are
+            \begin{align*}
+                y &= x - 0.7, \\
+                y &= x, \\
+                y &= x + 0.7.
+            \end{align*}
+            
+            \item The vector \(\mathbf{u}\) will point toward a direction where \(x\) becomes more positive and \(y\) tends to be more negative, perpendicular to the level curves. This is because as \(x\) increases, the \(z\) value decreases towards \(-\pi/2\), and as such will overpower the \(y\) value.
+        \end{enumerate}
     \end{answer}
 \end{document}

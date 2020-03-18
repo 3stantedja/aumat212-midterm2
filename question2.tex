@@ -1,0 +1,18 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{problems}
+%\usepackage{lg_jsylvest}
+
+\title{AUMAT 212 Midterm 2 --- Question 2}
+\date{\today}
+
+\begin{document}
+    \begin{problem}
+        Verify the limit does not exist:
+        \(\displaystyle \lim_{\substack{(x,y) \rightarrow (0,0) \\ x \neq \pm y}} \ln \left|\frac{x^2 + y^2}{x^2 - y^2} \right|\).
+
+        [\textit{Note:} An \(\varepsilon\)-\(\delta\) argument is \emph{not} required.]
+    \end{problem}
+    \begin{answer}
+        The limit does not exist because in the case that we set \(x = 0\) we can see that at \(y = 0\) the result for \(\ln \left|\frac{x^2 + y^2}{x^2 - y^2} \right|\) is undefined, and same goes for the case where we set \(y = 0\). No matter how we manipulate the formula the result would still be undefined, and 0 is neither positive nor negative. As such we say that the limit does not exist.
+    \end{answer}
+\end{document}

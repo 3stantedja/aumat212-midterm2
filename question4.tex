@@ -1,0 +1,33 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{problems}
+%\usepackage{lg_jsylvest}
+
+\title{AUMAT 212 Midterm 2 -- Question 4}
+\date{\today}
+
+\begin{document}
+    \begin{problem}
+        Determine the critical points of the function \(f(x,y)\) in the first quadrant \((x,y > 0)\).
+        \[
+          f(x,y) = x^2 + y^2 + \frac{1}{x^2 y^2}
+        \]
+        Then use the Second Derivative Test to determine whether each critical point is a local maximum, local minimum, or saddle point.
+    \end{problem}
+    \begin{answer}
+        \(\displaystyle f(x,y) = x^2 + y^2 + \frac{1}{x^2 y^2}\)
+        
+        Get 1st derivative and 2nd derivative of \(f(x,y)\).
+        \begin{align*}
+            f_{x} &= 2x + y^2 - \frac{2}{y^2} x^{-3} & f_{xx} &= 2 + y^2 + \frac{6}{y^2} x^{-4} \\
+            f_{y} &= x^2 + 2y - \frac{2}{x^2} y^{-3} & f_{yy} &= x^2 + 2 + \frac{6}{x^2} y^{-4}
+        \end{align*}
+
+        To find the critical points, set both \(f_x\) and \(f_y\) to 0 and solve the system of equations.
+        \begin{align*}
+            2x + y^2 - \frac{2}{y^2} x^{-3} &= 0 \\
+            x^2 + 2y - \frac{2}{x^2} y^{-3} &= 0
+        \end{align*}
+
+        (solution not finished)
+    \end{answer}
+\end{document}
